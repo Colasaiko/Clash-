@@ -4,37 +4,48 @@ title: Clash 新手配置与节点选择完整教程
 description: 从 Clash 基础配置、订阅导入到节点质量判断、测速、自动选择和常见误区，面向新手整理的完整入门教程。
 ---
 
-# 🌐 Clash 新手配置与节点选择教程
+# 🌐 Clash 配置、节点选择与网络测试指南
 
-本教程面向第一次接触 Clash、Mihomo 或代理客户端的新手，从基础配置开始，逐步学习节点选择、网络测试、自动切换以及常见问题。
+本指南提供结构化的 Clash、Mihomo 等代理客户端的配置方案。涵盖基础概念、节点选择机制、网络质量评估及高级规则分流，协助用户构建稳定、高效的自定义网络环境。
 
-## 第一阶段：Clash 基础配置
-
-- **[Clash 基础配置](./01-Clash基础配置.md)**
-  *了解 Clash 基础概念、客户端配置、订阅导入、节点、代理组、系统代理与运行模式。*
-
-## 第二阶段：判断节点质量
-
-- **[节点质量判断](./02-节点质量判断.md)**
-  *学习延迟、丢包、速度和稳定性之间的区别，并了解如何判断节点实际质量。*
-
-## 第三阶段：节点测试与自动选择
-
-- **[实际测试节点](./03-实际测试节点.md)**
-  *学习实际测速、URL-Test、Fallback、Load-Balance 等自动节点选择方式。*
-
-## 第四阶段：使用场景与新手误区
-
-- **[新手常见误区](./04-新手常见误区.md)**
-  *了解网页浏览、视频、AI、远程办公等不同场景下的节点选择思路以及常见误区。*
-
-## 第五阶段：工具与进阶学习
-
-- **[推荐工具](./05-推荐工具.md)**
-  *整理 Clash Verge Rev、Mihomo、测速工具，以及 DNS、TUN、规则分流等后续学习方向。*
-
----
-
-> **推荐学习顺序**：
-> 
-> Clash 基础 → 配置订阅 → 认识节点 → 测试延迟 → 检查丢包 → 测试速度 → 判断稳定性 → URL-Test → Fallback → DNS / TUN / 规则分流
+<div class="module-grid">
+  <div class="module-card">
+    <div class="module-num">01</div>
+    <div class="module-content">
+      <h3><a href="./01-Clash基础配置.html">Clash 基础配置</a></h3>
+      <p>客户端配置、订阅导入、代理组管理、系统代理与核心运行模式解析。</p>
+    </div>
+  </div>
+  
+  <div class="module-card">
+    <div class="module-num">02</div>
+    <div class="module-content">
+      <h3><a href="./02-节点质量判断.html">节点质量判断</a></h3>
+      <p>深度剖析网络延迟、节点丢包、传输速度与稳定性的真实业务影响。</p>
+    </div>
+  </div>
+  
+  <div class="module-card">
+    <div class="module-num">03</div>
+    <div class="module-content">
+      <h3><a href="./03-实际测试节点.html">实际测试节点与自动选择</a></h3>
+      <p>掌握 URL-Test 自动选择、Fallback 故障切换、Load-Balance 负载均衡机制。</p>
+    </div>
+  </div>
+  
+  <div class="module-card">
+    <div class="module-num">04</div>
+    <div class="module-content">
+      <h3><a href="./04-新手常见误区.html">不同使用场景与选择思路</a></h3>
+      <p>流媒体解锁、AI 工具交互、远程办公及新手配置中高频发生的技术误区。</p>
+    </div>
+  </div>
+  
+  <div class="module-card">
+    <div class="module-num">05</div>
+    <div class="module-content">
+      <h3><a href="./05-推荐工具.html">推荐工具与进阶技术</a></h3>
+      <p>Clash Verge Rev、Mihomo 生态、DNS 解析流程、TUN 虚拟网卡与流量拦截分流。</p>
+    </div>
+  </div>
+</div>

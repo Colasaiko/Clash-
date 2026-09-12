@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: site.title | default: "Clash 技术文档" }}</title>
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+    {% endif %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="brand">Clash Guide</div>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="{{ '/' | relative_url }}">Documentation Index</a>
+                <a href="{{ '/01-Clash基础配置.html' | relative_url }}">01. 基础配置</a>
+                <a href="{{ '/02-节点质量判断.html' | relative_url }}">02. 节点质量</a>
+                <a href="{{ '/03-实际测试节点.html' | relative_url }}">03. 实际测试</a>
+                <a href="{{ '/04-新手常见误区.html' | relative_url }}">04. 常见误区</a>
+                <a href="{{ '/05-推荐工具.html' | relative_url }}">05. 推荐工具</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <div class="main-wrapper">
+            <main class="content-area">
+                {{ content }}
+            </main>
+            <footer class="doc-footer">
+                <p>&copy; {{ site.time | date: '%Y' }} Clash 技术文档. System Active.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
